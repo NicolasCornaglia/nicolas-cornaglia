@@ -1,0 +1,101 @@
+.container {
+   display: flex;
+   justify-content: center;
+}
+
+.logosContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: right;
+   justify-content: center;
+   position: absolute;
+   right: 15%;
+   gap: 5vw;
+}
+
+.paragraph {
+   margin: 0px 0 10px 5px;
+}
+
+h3 {
+   color: white;
+   margin: 15px 0 5px 0 
+}
+
+.logoStud {
+   height: 15vh;
+   max-width: 225px;
+   max-height: 255px;
+   aspect-ratio: 4/4;
+   object-fit: fill;
+   mix-blend-mode: color-burn;
+   padding: 3%;
+   border-radius: 50%;
+   background-color: white;
+   box-shadow: 1px 1px 15px 5px black;
+   transition: all 500ms;
+   cursor: pointer;
+   align-self: center;
+}
+
+.logoStud:hover {
+   transform: scale(1.1);
+}
+
+
+.link {
+   color: white;
+   transition: all 500ms;
+   margin: 0 0 0 4px
+}
+
+.link:hover  {
+   background-image: linear-gradient(
+     to right,
+     #54b3d6,
+     #54b3d6 50%,
+     #000 0%
+   );
+   background-size: 200% 100%;
+   background-position: -100%;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 0.3s ease-in-out;
+}
+
+.logosContainerMobile {
+   display: none;
+}
+
+.text-zone {
+   font-size: 14px
+}
+
+
+@media(max-width: 768px) {
+   .logosContainer {
+      display: none
+   }
+   .logoStud {
+      margin-top: 2%;
+      width: 10vw;
+      height: auto;
+   }
+
+   .text-zone {
+      font-size: 10px
+   }
+
+   .logosContainerMobile {
+      display: flex;
+      width: 65vw;
+      margin: auto;
+      justify-content: space-around;
+      align-items: flex-star;
+   }
+
+   .paragraph {
+      margin: 0px 0px 15px 5px
+   }
+
+}
