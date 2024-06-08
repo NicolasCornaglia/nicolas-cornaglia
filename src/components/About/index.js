@@ -38,7 +38,7 @@ const About = () => {
                   Hi, I'm Nicolas Cornaglia and I was born in 1996 in Rafaela, Santa Fe, Argentina. I studied Physics at the National University of Rosario and later I took courses to develop myself as web developer.
                </p>
                <p className='paragraph-about'>
-                  I'm a very ambitious fullstack developer looking for a front-end role in an IT company with the opportunity to work on with the latest technologies on challenging and diverse projects.
+                  I'm a very ambitious fullstack developer looking for a back-end role in an IT company with the opportunity to work on with the latest technologies on challenging and diverse projects.
                </p>
                <p className='paragraph-about'>
                   I'm quietly confident, naturally curious and continuously working on improving my skillset and myself as a person.
