@@ -76,17 +76,17 @@ const Contract = () => {
             <div className="info-map">
                Nicolas Cornaglia
                <br />
-               Spain
+               Argentinian
                <br />
-               Barcelona
+               Barcelona, Spain
                <br />
                <span>nicolascornaglia0@gmail.com</span>
             </div>
 
             <div className="map-wrap">
-               <MapContainer center={[41.405648, 2.161831]} zoom={14}>
+               <MapContainer center={[41.390205, 2.154007]} zoom={13}>
                   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                  <Marker position={[41.405648, 2.161831]}>
+                  <Marker position={[41.390205, 2.154007]}>
                      <Popup>Nicolas lives here, come over for a cup of coffee :)</Popup>
                   </Marker>
                </MapContainer>
