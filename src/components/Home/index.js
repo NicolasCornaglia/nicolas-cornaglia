@@ -37,7 +37,7 @@ const Home = () => {
                      idx={22} />
                   <br />
                </h1>
-               <h2> Fullstack Developer / MERN (MongoDB ExpressJS ReactJS NodeJS) </h2>
+               <h2> Fullstack Web Developer (Django ReactJS NodeJS SQL MongoDB ExpressJS) </h2>
                <Link to="/contact" className="flat-button" onClick={() => { window.location.href = "/contact" }}> CONTACT ME </Link>
             </div>
             <div className="logo">

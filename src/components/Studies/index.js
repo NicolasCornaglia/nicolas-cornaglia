@@ -28,6 +28,18 @@ const Studies = () => {
                      idx={15} />
                </h1>
                <div>
+                  <h3>(2023) Computer Science Asignatures</h3>
+                  <p className='paragraph'>
+                     While working, my interest in computer science did not go away. I decided to keep studying to know more about different subjects of interest. 
+                     I attended classes of Programming I and II, Data Structures and Algorithms I and II focusing mainly in Python, good practices, data structures, complexity of algorithms, O(n) notation, hashs, binary trees, graphs and more.
+                     Study plan can be seen
+                     <a target="_blank" rel="noreferrer" href="https://web.fceia.unr.edu.ar/images/PDF/planes_de_estudio/Plan_LCC_CD_41043_2023_2.pdf" className='link'>
+                        <span>here</span>
+                     </a>
+                     .
+                  </p>
+               </div>
+               <div>
                   <h3>(2022) DIGITAL HOUSE COURSE</h3>
                   <p className='paragraph'>
                      While finishing my Physics degree, I started a Fullstack Web Developer course on the platform Digital House.
