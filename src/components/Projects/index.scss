@@ -1,92 +1,36 @@
-.content-container {
-   display: flex;
-   flex-direction: column;
-}
-
 .projectsContainer {
    display: flex;
-   justify-content: space-evenly;
-   transition-delay: 1.5s;
-}
-
-.project-card {
-   height: 20vh;
-}
-
-.imageStudies {
-   aspect-ratio: 5/4;
-   width: 13vw;
-   border-radius: 15px;
-   cursor: pointer;
-   box-shadow: 5px 5px 15px black;
-   background-color: #000;
-}
-
-.hiddenDescription {
-   visibility: hidden;
-   opacity: 0;
-   transition: visibility 0s, opacity 0.7s linear;
-   width: 16vw;
-   margin: auto;
-   font-size: 13px;
-}
+   flex-direction: column;
+   align-items: center;
+   overflow-y: scroll;
+   max-height: 70vh; // Adjust height to fit your design
+   scroll-snap-type: y mandatory; // Ensures smooth scrolling
+   
+ }
+ 
+ // Optional scrollbar styling for better appearance
+ .projectsContainer::-webkit-scrollbar {
+   width: 8px;
+ }
+ 
+ .projectsContainer::-webkit-scrollbar-thumb {
+   background-color: #888;
+   border-radius: 10px;
+ }
+ 
+ .projectsContainer::-webkit-scrollbar-thumb:hover {
+   background-color: #555;
+ }
 
 
-.project-card:hover .hiddenDescription {
-   visibility: visible;
-   opacity: 1;
-}
-
-.link {
-   color: white;
-   transition: all 500ms;
-}
-
-.link:hover {
-   background-image: linear-gradient(to right,
-         #54b3d6,
-         #54b3d6 50%,
-         #000 0%);
-   background-size: 200% 100%;
-   background-position: -100%;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-   transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
    .projectsContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-      height: 70vh;
+      flex-direction: row; // Change to horizontal layout
+      overflow-x: scroll; // Enable horizontal scrolling
+      overflow-y: hidden; // Disable vertical scrolling
+      max-height: unset; // Remove the height restriction for horizontal layout
+      scroll-snap-type: x mandatory; // Enable horizontal scroll snap
    }
 
-   .image-info {
-      display: flex;
-
-      a img {
-         aspect-ratio: 5/4;
-         margin: 10px 15px 0 0;
-         width: 25vw;
-         background-color: #000;
-      }
-   }
-
-   .hiddenDescription {
-      visibility: visible;
-      font-size: 10px;
-
-   }
-
-   .link {
-      font-size: 8px;
-   }
-
-   .project-card .hiddenDescription {
-      visibility: visible;
-      opacity: 1;
-   }
 }
