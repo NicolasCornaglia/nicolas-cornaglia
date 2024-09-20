@@ -14,7 +14,7 @@ const project1 = {
   link: "https://virgiborgnafitclub.web.app/",
   name: "Virgi Borgna Fit Club",
   desc: "Gym website for searching classes and signing up for different activities.",
-  tech: "Technologies used: React, Javascript, Sass, HTML5.",
+  tech: "Technologies used: React, Javascript, Scss, HTML5.",
 }
 const project2 = {
   img: whereToWatch,
@@ -35,10 +35,38 @@ const project4 = {
   link: "https://nicolascornaglia.github.io/cuantoes-deploy/",
   name: "Cuanto Es",
   desc: "Mobile website to divide equally the spendings of many people in a reunion. Useful for situations like a meeting to have dinner or going out with friends.",
-  tech: "Technologies used: React, Javascript, Sass, HTML5.",
+  tech: "Technologies used: React, Javascript, Scss, HTML5.",
+}
+const project5 = {
+  img: "",
+  link: "https://webempresagenerica.pythonanywhere.com/",
+  name: "Coffee shop website",
+  desc: "Responsive website developed for cofffee shops. Clients can modify..... adddd",
+  tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using Class Based views.",
+}
+const project6 = {
+  img: "",
+  link: "https://github.com/NicolasCornaglia/porfolio-generico",
+  name: "Generic portfolio website",
+  desc: "Responsive website developed for any person that needs a portfolio. Users can modify..... add .....",
+  tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using function based views.",
+}
+const project7 = {
+  img: "",
+  link: "https://github.com/NicolasCornaglia/PlaygroundDjango",
+  name: "Playground website",
+  desc: "Responsive website developed for testing Django concepts such as CBV, Authentication, Registration, Profiles, Test Driven Development, Messages between users.",
+  tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using function based views.",
 }
 
-const projectsArr = [project1, project2, project3, project4]
+const project8 = {
+  img: "",
+  link: "https://github.com/NicolasCornaglia/Django-React-NotesApp",
+  name: "Notes App",
+  desc: "Fullstack responsive app developed for users to create store and delete notes. Users can.......",
+  tech: "Technologies used: Django, Python, HTML, CSS, SQLite, React, Javascript. Using class based views.",
+}
+const projectsArr = [project8,project7,project5,project6, project1, project2, project3, project4]
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate")
