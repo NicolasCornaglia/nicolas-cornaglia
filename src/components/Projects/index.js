@@ -41,21 +41,21 @@ const project5 = {
   img: "",
   link: "https://webempresagenerica.pythonanywhere.com/",
   name: "Coffee shop website",
-  desc: "Responsive website developed for cofffee shops. Clients can modify..... adddd",
+  desc: "Responsive website developed for cofffee shops. Clients use the django admin terminal to create modify and delete categories, pages, users, services and links.",
   tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using Class Based views.",
 }
 const project6 = {
   img: "",
   link: "https://github.com/NicolasCornaglia/porfolio-generico",
   name: "Generic portfolio website",
-  desc: "Responsive website developed for any person that needs a portfolio. Users can modify..... add .....",
+  desc: "Responsive website developed for any person that needs a portfolio. Users can create modify and delete projects in Django admin panel.",
   tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using function based views.",
 }
 const project7 = {
   img: "",
   link: "https://github.com/NicolasCornaglia/PlaygroundDjango",
   name: "Playground website",
-  desc: "Responsive website developed for testing Django concepts such as CBV, Authentication, Registration, Profiles, Test Driven Development, Messages between users.",
+  desc: "Responsive website developed for testing Django concepts such as CBV, Authentication, Registration, Profiles, Test Driven Development, Messages between users and more.",
   tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using function based views.",
 }
 
@@ -63,7 +63,7 @@ const project8 = {
   img: "",
   link: "https://github.com/NicolasCornaglia/Django-React-NotesApp",
   name: "Notes App",
-  desc: "Fullstack responsive app developed for users to create store and delete notes. Users can.......",
+  desc: "Fullstack responsive app developed for users to create store and delete notes. Users can......................",
   tech: "Technologies used: Django, Python, HTML, CSS, SQLite, React, Javascript. Using class based views.",
 }
 const projectsArr = [project8,project7,project5,project6, project1, project2, project3, project4]
