@@ -7,6 +7,8 @@ import decoHogar from "../../assets/images/LogoDH.png"
 import VBFitClub from "../../assets/images/VARIACIÓN-LOGO-GENERAL.png"
 import cuantoEs from "../../assets/images/logoCuantoEs.png"
 import whereToWatch from "../../assets/images/WhereToWatch.png"
+import githubImg from "../../assets/images/github.png"
+import CoffeeShop from "../../assets/images/CoffeeShop.jpg"
 import Project from "../Project"
 
 const project1 = {
@@ -38,21 +40,21 @@ const project4 = {
   tech: "Technologies used: React, Javascript, Scss, HTML5.",
 }
 const project5 = {
-  img: "",
+  img: CoffeeShop,
   link: "https://webempresagenerica.pythonanywhere.com/",
   name: "Coffee shop website",
-  desc: "Responsive website developed for cofffee shops. Clients use the django admin terminal to create modify and delete categories, pages, users, services and links.",
+  desc: "Responsive website developed for coffee shops. Clients use the django admin terminal to create modify and delete categories, pages, users, services and links.",
   tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using Class Based views.",
 }
 const project6 = {
-  img: "",
+  img: githubImg,
   link: "https://github.com/NicolasCornaglia/porfolio-generico",
   name: "Generic portfolio website",
   desc: "Responsive website developed for any person that needs a portfolio. Users can create modify and delete projects in Django admin panel.",
   tech: "Technologies used: Django, Python, HTML, CSS, SQLite. Using function based views.",
 }
 const project7 = {
-  img: "",
+  img: githubImg,
   link: "https://github.com/NicolasCornaglia/PlaygroundDjango",
   name: "Playground website",
   desc: "Responsive website developed for testing Django concepts such as CBV, Authentication, Registration, Profiles, Test Driven Development, Messages between users and more.",
@@ -60,11 +62,11 @@ const project7 = {
 }
 
 const project8 = {
-  img: "",
+  img: githubImg,
   link: "https://github.com/NicolasCornaglia/Django-React-NotesApp",
   name: "Notes App",
-  desc: "Fullstack responsive app developed for users to create store and delete notes. Users can......................",
-  tech: "Technologies used: Django, Python, HTML, CSS, SQLite, React, Javascript. Using class based views.",
+  desc: "Fullstack responsive Notes App with jwt tokens authentication that allows users organize their activities by adding and deleting notes.",
+  tech: "Technologies used: Django, Python, JWT, HTML, CSS, SQLite, React, Javascript. Using class based views.",
 }
 const projectsArr = [project8,project7,project5,project6, project1, project2, project3, project4]
 
