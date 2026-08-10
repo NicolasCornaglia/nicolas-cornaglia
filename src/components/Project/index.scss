@@ -8,11 +8,19 @@
   margin: 10px 0;
   width: 70vw;
   border-radius: 8px;
-  box-shadow: inset 0px 0px 15px black;
-  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  background: #0c3d59;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
 
   &:hover {
     transform: scale(1.05);
+    background: #114a6b;
+    border-color: rgba(255, 215, 0, 0.4);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
   }
 
   .image-info {

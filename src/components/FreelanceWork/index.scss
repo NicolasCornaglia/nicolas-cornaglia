@@ -3,9 +3,9 @@
    flex-direction: column;
    align-items: center;
    overflow-y: scroll;
-   max-height: 70vh; // Adjust height to fit your design
+   max-height: 60vh; // Adjust height to fit your design
    scroll-snap-type: y mandatory; // Ensures smooth scrolling
-   
+   padding-left: 10px;
  }
  
  // Optional scrollbar styling for better appearance
@@ -31,6 +31,27 @@
       overflow-y: hidden; // Disable vertical scrolling
       max-height: unset; // Remove the height restriction for horizontal layout
       scroll-snap-type: x mandatory; // Enable horizontal scroll snap
+   }
+
+   // Cards stretch to fill the row exactly, so no horizontal scrollbar ever appears
+   .freelanceContainer {
+      overflow-x: hidden;
+      gap: 12px;
+      padding-right: 12px;
+
+      .project-card {
+         flex: 1 1 0;
+         min-width: 0;
+         width: auto;
+         max-width: none;
+         height: 46vh;
+         margin: 30px 10px;
+
+         .image-info img {
+            width: 100%;
+            max-width: 200px;
+         }
+      }
    }
 
 }

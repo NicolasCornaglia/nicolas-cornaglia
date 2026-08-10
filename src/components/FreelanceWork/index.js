@@ -4,33 +4,34 @@ import Loader from "react-loaders"
 import AnimatedLetters from "../AnimatedLetters"
 import { useEffect, useState } from "react"
 import VBFitClub from "../../assets/images/VARIACIÓN-LOGO-GENERAL.png"
-import githubImg from "../../assets/images/github.png"
+import vibraTravelLogo from "../../assets/images/vibra-travel-logo.svg"
+import engracorLogo from "../../assets/images/engracor-logo.png"
 import Project from "../Project"
 
 const project1 = {
   img: VBFitClub,
   link: "https://virgiborgnafitclub.web.app/",
   name: "Virgi Borgna Fit Club",
-  desc: "Gym website for searching classes and signing up for different activities.",
-  tech: "Technologies used: React, Javascript, Scss, HTML5.",
+  desc: "Gym website for browsing classes and signing up for different activities.",
+  tech: "Technologies used: React, JavaScript, SCSS, HTML5.",
 }
 const project2 = {
-  img: githubImg,
+  img: engracorLogo,
   link: "#",
   name: "Engracor",
-  desc: "End-to-end production tracking tool for a metallurgic manufacturer, deployed on-premise.",
+  desc: "End-to-end production tracking tool for a metallurgic manufacturer, deployed on premises and accessible via a web interface, allowing for real-time monitoring of production processes.",
   tech: "Technologies used: Python, FastAPI, React.",
 }
 const project3 = {
-  img: githubImg,
-  link: "https://vibra-travel.com",
+  img: vibraTravelLogo,
+  link: "https://vibra-travel.com/",
   name: "Vibra Travel",
-  desc: "Responsive website for a travel agency, managing full project lifecycle from concept to deployment.",
-  tech: "Technologies used: React, Javascript, HTML5, CSS.",
+  desc: "Responsive website for a travel agency, managing the full project lifecycle from concept to deployment.",
+  tech: "Technologies used: React, JavaScript, HTML5, CSS.",
 }
-const projectsArr = [project1, project2, project3]
+const projectsArr = [project2, project3, project1]
 
-const FreelanceProjects = () => {
+const FreelanceWork = () => {
   const [letterClass, setLetterClass] = useState("text-animate")
 
   useEffect(() => {
@@ -47,13 +48,13 @@ const FreelanceProjects = () => {
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}
-                strArray={["F", "r", "e", "e", "l", "a", "n", "c", "e", " ", "P", "r", "o", "j", "e", "c", "t", "s"]}
+                strArray={["F", "r", "e", "e", "l", "a", "n", "c", "e", " ", "W", "o", "r", "k"]}
                 idx={15}
               />
             </h1>
           </div>
 
-          <div className="projectsContainer">
+          <div className="projectsContainer freelanceContainer">
             {projectsArr.map((project) => (
               <Project
                 img={project.img}
@@ -72,4 +73,4 @@ const FreelanceProjects = () => {
   )
 }
 
-export default FreelanceProjects
+export default FreelanceWork

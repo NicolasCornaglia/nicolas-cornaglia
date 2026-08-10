@@ -17,6 +17,10 @@
    left: 80px;
    font-size: 18px;
    font-family: 'La Belle Aurore';
+
+   @media (min-width: 768px) {
+      left: 110px;
+   }
 }
 
 .bottom-tag-html {
@@ -50,7 +54,7 @@
 .studies-page {
    .text-zone {
       position: absolute;
-      left: 10%;
+      left: max(10%, 110px);
       top: 50%;
       transform: translateY(-50%);
       width: 45%;
@@ -135,13 +139,13 @@
    }
       .text-zone {
          position: absolute;
-         left: 10%;
+         left: max(10%, 110px);
          top: 50%;
          transform: translateY(-50%);
          vertical-align: middle;
          display: table-cell;
          max-height: 90%;
-   
+
          h1 {
             font-size: 53px;
             font-family: 'Coolvetica';

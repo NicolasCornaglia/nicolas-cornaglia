@@ -2,7 +2,7 @@
 
    .text-zone {
       position: absolute;
-      left: 10%;
+      left: max(10%, 110px);
       top: 50%;
       transform: translateY(-50%);
       width: 40%;

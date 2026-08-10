@@ -44,10 +44,10 @@ const Contract = () => {
                      idx={15} />
                </h1>
                <p>
-                  I am interested in joining a company where I can prove
-                  and improve myself as a professional. If you have any
-                  request or question, don't hesitate to contact me using
-                  the below form.
+                  I am looking to join a company where I can grow and make
+                  a meaningful contribution as a professional. Feel free to
+                  reach out using the form below with any questions or
+                  opportunities.
                </p>
                <div className="contact-form">
                   <form ref={form} onSubmit={sendEmail}>
