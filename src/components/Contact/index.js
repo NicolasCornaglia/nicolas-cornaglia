@@ -3,8 +3,11 @@ import React, { useRef } from 'react';
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import emailjs from '@emailjs/browser';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
+// Free access key from https://web3forms.com (no login required, just enter
+// your email and they send you the key). Safe to expose in client code.
+const WEB3FORMS_ACCESS_KEY = '9feaa075-0f42-40a6-b41e-073acb9b36a6';
 
 const Contract = () => {
    const form = useRef();
@@ -12,16 +15,31 @@ const Contract = () => {
    const sendEmail = (e) => {
       e.preventDefault();
       const sendButton = document.querySelector('.flat-button');
-      sendButton.value = 'SENT';
-      sendButton.style.color='#115173';
-      sendButton.background = '#ffd700';
-      sendButton.style.borderColor = '#115173';
-      emailjs.sendForm('service_awyfzmj', 'template_vhd5btr', form.current, 'SHbIv1IAQej--nm8o')
+      sendButton.value = 'SENDING...';
+
+      const formData = new FormData(form.current);
+      formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+
+      fetch('https://api.web3forms.com/submit', {
+         method: 'POST',
+         body: formData,
+      })
+         .then((res) => res.json())
          .then((result) => {
-            console.log(result.text);
-         }, (error) => {
-            console.log(error.text);
+            if (result.success) {
+               sendButton.value = 'SENT';
+               sendButton.style.color = '#115173';
+               sendButton.style.borderColor = '#115173';
+            } else {
+               sendButton.value = 'ERROR';
+               console.log(result);
+            }
+         })
+         .catch((error) => {
+            sendButton.value = 'ERROR';
+            console.log(error);
          });
+
       e.target.reset();
    }
 

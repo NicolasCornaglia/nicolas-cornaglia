@@ -17,7 +17,7 @@ const project1 = {
 }
 const project2 = {
   img: engracorLogo,
-  link: "#",
+  link: "https://engracor-demo.onrender.com/",
   name: "Engracor",
   desc: "End-to-end production tracking tool for a metallurgic manufacturer, deployed on premises and accessible via a web interface, allowing for real-time monitoring of production processes.",
   tech: "Technologies used: Python, FastAPI, React.",
